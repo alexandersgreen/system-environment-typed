@@ -18,6 +18,14 @@ library
   exposed-modules:     System.Environment.Typed
   build-depends:       base >= 4.7 && < 5, template-haskell, text
   default-language:    Haskell2010
+  other-modules:       System.Environment.Typed.Internal
+
+executable system-environment-typed-example
+  hs-source-dirs:      examples
+  main-is:             Example.hs
+  default-language:    Haskell2010
+  build-depends:       base
+                     , system-environment-typed
 
 source-repository head
   type:     git
